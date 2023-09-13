@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2023_09_11_062119) do
     t.integer "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "publisher_id", null: false
+    t.integer "publisher_id"
     t.integer "sales_status"
     t.index ["publisher_id"], name: "index_books_on_publisher_id"
   end
